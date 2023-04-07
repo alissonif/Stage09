@@ -7,6 +7,8 @@ import { Input } from "../../components/Input";
 import { Section } from "../../components/Section";
 import { Note } from "../../components/Note";
 
+import { Link } from "react-router-dom";
+
 export function Home() {
   return (
     <Container>
@@ -37,6 +39,7 @@ export function Home() {
 
       <Content>
         <Section title="Minhas notas">
+          <Link to="/details/:id">
           <Note
             data={{
               title: "React",
@@ -45,7 +48,7 @@ export function Home() {
                 { id: "2", name: "nodejs" },
               ],
             }}
-          />
+          /></Link>
         </Section>
       </Content>
 

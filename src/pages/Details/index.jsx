@@ -5,6 +5,7 @@ import { Button } from "../../components/Button";
 import { Section } from "../../components/Section";
 import { Tag } from "../../components/Tag";
 import { ButtonText } from "../../components/ButtonText";
+import { Link } from "react-router-dom";
 
 export function Details() {
   return (
@@ -30,7 +31,9 @@ export function Details() {
             <Tag title="express" />
             <Tag title="node" />
           </Section>
+          <Link to="/">
           <Button title="Voltar" />
+          </Link>
         </Content>
       </main>
     </Container>
